@@ -1,0 +1,65 @@
+.sticky {
+  display: block
+}
+#masthead {
+  background: #000
+}
+
+.site-header {
+  background-color: #393939;
+  padding: 7px 30px 0;
+}
+.logo{
+  float: left;
+  width: 110px;
+  margin-bottom: 13px;
+}
+.logo > img{
+  width:100%;
+}
+.site-branding {
+  float: left
+}
+
+.ace-slogan {
+  margin-top: 50px
+}
+
+.quick-contact {
+  margin-top: 17px;
+  text-align: right;
+  line-height: 1;
+}
+
+ul.quick-contact li {
+  list-style: none;
+  float: left;
+  margin-left: 25px;
+}
+span.contact-region {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+}
+
+.quick-contact a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem
+}
+
+.quick-contact a:hover {
+  color: #fff;
+  text-decoration: underline
+}
+
+.quick-contact a:first-child {
+  margin-right: 20px
+}
+.quick-contact--menu-secondary {
+  float: right
+}

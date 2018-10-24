@@ -1,0 +1,131 @@
+// Sizes
+$base-font-size: 18px;
+$ratio: 1.414;
+$container: 1216px;
+$site-width: 1216px;
+
+// Colors
+$black: #333333;
+
+// Fonts
+$primary-family: 'Open Sans', sans-serif;
+$secondary-family: 'Copse-Regular', serif;
+$alt-family: 'Open Sans Condensed', sans-serif;
+
+
+// Media Queries
+$tablet-width: 768px;
+$phone-width: 767px;
+$header-width: 920px;
+
+$desktop: 'screen and (max-width: #{$container})';
+$tablet: 'screen and (max-width: #{$tablet-width})';
+$phone: 'screen and (max-width: #{$phone-width})';
+$header: 'screen and (max-width: #{$header-width})';
+
+// Body
+$transition: all 0.25s ease-in;
+
+// Colors
+$primary: #dac373;
+$secondary: #2f2f2f;
+$tertiary: #373737;
+$quaternary: #7a7a7a;
+$quinary: purple;
+$senary: orange;
+$septenary: brown;
+$octonary: black;
+$nonary: grey;
+$denary: #b4d455;
+
+
+// Social Colors Guys, Social Colors
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+$github: #703083;
+
+// Functions
+@function trem( $px_value ) {
+    @return ( $px_value / $base-font-size ) + rem;
+}
+
+// Mixins
+@mixin transform( $transforms ) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transform-origin( $origin ) {
+    -moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+@mixin transform-perspective( $perspective ) {
+    -moz-transform-perspective: $perspective;
+    -o-transform-perspective: $perspective;
+    -ms-transform-perspective: $perspective;
+    -webkit-transform-perspective: $perspective;
+    transform-perspective: $perspective;
+}
+
+@mixin transition( $transition-property, $transition-time, $method ) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin animation($name, $duration, $iteration_count, $timing_function, $fill-mode, $delay:0s) {
+    // The -webkit- animation value NEEDS the delay in it, the plain animation value will break with it.
+    // And Firefox needs units with the delay number, even if it's 0.
+    -webkit-animation: $name $duration $delay $iteration_count $timing_function $fill-mode;
+    animation: $name $duration $delay $iteration_count $timing_function $fill-mode;
+
+}
+
+@mixin anything($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+    }
+    #{$property}: #{$value};
+}
+// Rem output with px fallback
+@mixin font-size($sizeValue) {
+    font-size: ($sizeValue) + px;
+    font-size: $sizeValue/16 + rem;
+}

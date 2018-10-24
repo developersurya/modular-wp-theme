@@ -1,0 +1,162 @@
+[
+    {
+        "key": "group_5b050b5ccb253",
+        "title": "Trip Module",
+        "fields": [
+            {
+                "key": "field_5b050b78402d6",
+                "label": "Trip Section",
+                "name": "trip_section",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "5b050ba4a17d6": {
+                        "key": "5b050ba4a17d6",
+                        "name": "featured_trips",
+                        "label": "Modular Trips",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b050c60402d7",
+                                "label": "Title",
+                                "name": "trip_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b050c7b402d8",
+                                "label": "Subtitle",
+                                "name": "trip_subtitle",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b054cbc21288",
+                                "label": "Post Type",
+                                "name": "trip_post_type",
+                                "type": "text",
+                                "instructions": "Please enter the post type slug.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b0528976283c",
+                                "label": "Category",
+                                "name": "trip_category",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "Featured": "Featured",
+                                    "Discounted": "Discounted"
+                                },
+                                "allow_custom": 0,
+                                "save_custom": 0,
+                                "default_value": [],
+                                "layout": "vertical",
+                                "toggle": 0,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5b054b51adfae",
+                                "label": "Trip Type",
+                                "name": "trip_type",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "Default": "Default",
+                                    "Grids": "Grids",
+                                    "Columns": "Columns",
+                                    "SingleMediaFeatured": "SingleMediaFeatured",
+                                    "Special\/Conditional": "Special\/Conditional"
+                                },
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "vertical",
+                                "return_format": "value"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
